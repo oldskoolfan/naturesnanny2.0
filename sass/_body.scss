@@ -1,0 +1,71 @@
+@font-face {
+	font-family: CopseRegular;
+	src: url('../fonts/Copse-Regular.ttf');
+}
+
+@font-face {
+	font-family: LobsterTwoRegular;
+	src: url('../fonts/LobsterTwo-Regular.otf');
+}
+
+@font-face {
+	font-family: LobsterTwoBold;
+	src: url('../fonts/LobsterTwo-Bold.otf');
+}
+
+body {
+	color: $grayFont;
+	background-color: $grayBkgd;
+	//background-color: $blueGrayBkgd;
+	min-width: 980px;
+}
+
+#Slideshow { display: none; }
+
+#Logo {
+	width: 100%;
+	text-align: center;
+	img:nth-of-type(2) { padding-bottom: 60px; margin-left: 20px; }
+}
+
+main {
+	@include outer-container;
+	font: {
+		size: 1em;
+		weight: normal;
+		family: "CopseRegular", Arial, Helvetica, sans-serif;
+	}
+
+	p { line-height: 1.5em; }
+	
+	h1 {
+		text-align: center;
+		margin: 20px 0 15px;
+		font: {
+			size: 2.5em;
+			family: "LobsterTwoBold", Arial, Helvetica, sans-serif;
+		}
+	}
+	h2, h3 { text-align: center; }
+	section.center { text-align: center; }
+
+	img.pet-img {
+		margin: 20px 0;
+		width: 250px;
+	}
+	embed {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+footer { 
+	margin: 60px 0 40px;
+	text-align: center; 
+	font: {
+		size: 0.8em;
+		weight: normal;
+		family: "CopseRegular", Arial, Helvetica, sans-serif;
+	}
+	color: $footerFont;
+}

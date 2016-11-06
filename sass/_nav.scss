@@ -1,0 +1,66 @@
+nav {
+	@include outer-container;
+	height: 60px;
+	background-color: $greenBkgd;
+	line-height: 60px;
+	a {
+		text-align: center;
+		@include span-columns(2);
+		display: block;
+		color: inherit;
+		transition: color 200ms;
+		&:hover, &.active {
+			color: $white;
+		}
+	}
+	.nav-placeholder {
+		height: inherit;
+		position: relative;
+		z-index: 11;
+		text-align: center;
+		@include span-columns(2);
+		float: left;
+		a {
+			width: 100%;
+			float: none;
+		}
+		span {
+			transition: color 200ms;
+		}
+		.nav-wrapper {
+			background-color: $yellowBkgd;
+			position: absolute;
+			height: 0;
+			width: 100%;
+			transition: height 200ms;
+			overflow: hidden;
+		}
+		&:hover {
+			a {
+				color: inherit !important;
+			}
+			span {
+				cursor: default;
+				color: $white;
+			}
+			.nav-wrapper {
+				height: 120px;
+			}
+		}
+		&.active span {
+			color: $white;
+		}
+	}
+	#services {
+		span {
+			display: block;
+			line-height: normal;
+			padding: 10px 0;
+		}
+		&:hover {
+			.nav-wrapper {
+				height: 180px;
+			}
+		}
+	}
+}

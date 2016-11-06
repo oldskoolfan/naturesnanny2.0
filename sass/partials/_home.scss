@@ -6,7 +6,9 @@ section.home {
 		@include clearfix;
 		margin: 40px 0;
 		div.img-link {
-			@include span-columns(4);
+			@media (min-width: $minDesktopWidth) {
+				@include span-columns(4);
+			}
 			text-align: center;
 			position: relative;
 			.overlay, .overlay-text {
@@ -35,7 +37,7 @@ section.home {
 					color: $grayFont;
 					font-size: 0.9em;
 					&:last-of-type {
-						color: $greenBkgd; 	
+						color: $greenBkgd;
 					}
 				}
 			}

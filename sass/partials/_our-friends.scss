@@ -28,3 +28,9 @@ section.our-friends {
 		}
 	}
 }
+
+@media(max-width:$mobileWidth) {
+	section.our-friends #Slideshow .img-wrapper {
+		height: 100%;
+	}
+}

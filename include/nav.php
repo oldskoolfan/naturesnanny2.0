@@ -1,5 +1,5 @@
 <?php $page = preg_replace('/[^A-z\-]/', '', $_SERVER['REQUEST_URI']); ?>
-<nav>
+<nav id="desktop-nav">
 	<a href="/" class="<?= $page === '' ? 'active' : '' ?>">HOME</a>
 	<div id="services" class="<?= $page === 'services' || $page === 'policies'
 		|| $page === 'pricing' ? 'nav-placeholder active' : 'nav-placeholder' ?>">

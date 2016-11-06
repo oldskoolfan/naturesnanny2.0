@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Columbus and Central Ohio Dog Sitter | Nature's Nanny</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -20,16 +21,27 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+
+	<!-- normalize.css -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+
+	<!-- fontawesome -->
+	<script src="https://use.fontawesome.com/c9ae3437bc.js"></script>
+
 	<link href="/assets/css/main.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	<script src="/assets/js/main.min.js"></script>
+	<script src="/assets/js/main.js"></script>
 </head>
 <body>
-	<div id="Logo">
-	<img src="/assets/img/logo.png" height="250" alt="Nature's Nanny Logo">
-	<img src="/assets/img/logo-text.png" alt="Nature's Nanny">
-	</div>
-	<main>
+	<div id="body">
+	<div id="m-nav-toggle" class="fa fa-bars fa-2x"></div>
+	<?php require "{$_SERVER['DOCUMENT_ROOT']}/include/mobile-nav.php" ?>
+	<div id="wrapper">
+		<div id="Logo">
+		<img src="/assets/img/logo.png" height="250" alt="Nature's Nanny Logo">
+		<img src="/assets/img/logo-text.png" alt="Nature's Nanny">
+		</div>
+		<main>

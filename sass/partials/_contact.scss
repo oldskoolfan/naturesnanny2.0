@@ -1,16 +1,19 @@
 .contact-page {
-	h2 { 
+	h2 {
 		font-family: "LobsterTwoRegular", Arial, Helvetica, sans-serif;
-		text-align: left; 
+		text-align: left;
 		color: $greenBkgd;
 		margin-bottom: 5px;
 	}
-	.contact-info {
-		@include span-columns(6);
+	@media (min-width:$minDesktopWidth) {
+		.contact-info {
+			@include span-columns(6);
+		}
 	}
-
 	.contact-form {
-		@include span-columns(6);	
+		@media (min-width:$minDesktopWidth) {
+			@include span-columns(6);
+		}
 		div.input-wrapper {
 			width: 350px;
 		}
@@ -19,13 +22,13 @@
 			display: block;
 			margin-bottom: 10px;
 			@include clearfix;
-			input { 
-				float: right; 
+			input {
+				float: right;
 				width: 70%;
 			}
 		}
-		textarea { 
-			width: 350px; 
+		textarea {
+			width: 350px;
 			display: block;
 			margin: 0 0 10px;
 		}

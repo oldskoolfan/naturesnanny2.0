@@ -13,14 +13,14 @@ require "$etcPath/email-creds.php";
 $mail = new PHPMailer();
 
 $mail->isSMTP();
-$mail->Host = "mail.dreamhost.com";
+$mail->Host = "sub5.mail.dreamhost.com";
 $mail->SMTPAuth = true;
 $mail->Username = $user;
 $mail->Password = $pwd;
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;
 
-$mail->From = $email;
+$mail->From = $pwd;
 $mail->FromName = "$firstname $lastname";
 $mail->addReplyTo($email);
 if (!$debug) {

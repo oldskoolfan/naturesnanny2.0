@@ -4,7 +4,7 @@
 	<section class="contact-info">
 		<h2>Contact Me:</h2>
 		<p>Christine Burkitt a.k.a "the nanny"</p>
-		<p>Phone: 614-336-8083</p>
+		<!-- <p>Phone: 614-336-8083</p> -->
 		<p>Cell: 614-657-6273</p>
 		<p><a href="mailto:naturesnanny@columbus.rr.com">Email: naturesnanny@columbus.rr.com</a></p>
 		<p>Please feel free to contact me with any questions, either by using this contact form, or calling me. Please note: for new clients, phone is always the best way to reach the Nanny. Taking care of the "babies" is our first priority. We do our best to check email once a day.</p>

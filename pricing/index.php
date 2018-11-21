@@ -8,11 +8,11 @@
 
 	<h3>Adult Dogs</h3>
 	<p>
-	$25 per dog per day (3 or more qualify for a multiple dog  discount)
+	$30 per dog per day (3 or more qualify for a multiple dog  discount)
 	</p>
 	<h3>Puppies</h3>
 	<p>
-	$30 per day (6 weeks to 10 months, some exceptions apply)
+	$35 per day (6 weeks to 10 months, some exceptions apply)
 	</p>
 	<h3>Seniors</h3>
 	<p>
